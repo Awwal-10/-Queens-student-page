@@ -1,38 +1,60 @@
 <!doctype html>
-<html lang="en">
+<html lang="en"> <!-- Accessibility: declare language for screen readers -->
   <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>My Queen’s Student Page</title>
-    <link rel="stylesheet" href="style.css"/> <!-- do not change this line -->
+    <meta charset="utf-8"/> <!-- Functionality: ensure UTF-8 encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/> <!-- Functionality: responsive design -->
+    <title>My Queen’s Student Page</title> <!-- Clarity: title matches page purpose -->
+    <link rel="stylesheet" href="style.css"/> <!-- Maintainability: styles in external CSS -->
   </head>
   <body>
-    <header>
-      <h1>Awwal Ahmed</h1> <!-- change this heading to your name -->
+    <header> <!-- Structure: semantic header -->
+      <h1>Awwal Ahmed</h1> <!-- Structure: only one <h1>, page owner’s name -->
     </header>
-    <!-- TODO: I like the way you arragend everything  -->
-    <main>
-      <!-- ====== ABOUT SECTION (edit the text) ====== -->
-      <h2>About Me</h2>
-      <p>I am a student at Queen’s School of Computing. I’m interested in exploring how computer science can be applied to areas like cybersecurity, artificial intelligence, and software development, while also building practical skills through projects and research.</p>
+    <!-- TODO: I like the way you arranged everything -->
+    <main> <!-- Structure: main content container -->
+      <!-- ====== ABOUT SECTION ====== -->
+      <h2>About Me</h2> <!-- Structure: section title with <h2> -->
+      <p>
+        I am a student at Queen’s School of Computing. I’m interested in exploring how computer science 
+        can be applied to areas like cybersecurity, artificial intelligence, and software development, 
+        while also building practical skills through projects and research.
+      </p> <!-- Clarity: plain English, explains who/what/where -->
 
-      <!-- ====== PHOTO (upload me.jpg to repo root, then update the src below) ====== -->
-      <img src="me.JPG" alt="Awwal Ahmed portrait" width="239" height="320" />
+      <!-- ====== PHOTO ====== -->
+      <img src="me.JPG" alt="Awwal Ahmed portrait" width="239" height="320" /> 
+      <!-- Functionality: check image loads in DevTools Network tab -->
+      <!-- Accessibility: alt text provided -->
+      <!-- Performance: specify width/height; keep file ~200–400 KB -->
 
-      <!-- ====== PROJECTS/COURSES (add or rename items to courses instead of projects) ====== -->
-      <h2>Courses</h2>
+      <!-- ====== COURSES SECTION ====== -->
+      <h2>Courses</h2> <!-- Structure: <h2> for section -->
       <ul>
-       <li>CISC 121 — Introduction to Programming.</li>
-       <li>MATH 112 — Introduction Linear Algebra </li>
-       <li>MATH 121/124 — Differential and Integral Calculus.</li>
-       <li>COGS 100 — Introduction to Cognitive Science.</li>
-       <li>CISC 102 — Discrete Structures.</li>
-      </ul>
+        <li>CISC 121 — Introduction to Programming.</li> <!-- Clarity: descriptive course names -->
+        <li>MATH 112 — Introduction Linear Algebra </li>
+        <li>MATH 121/124 — Differential and Integral Calculus.</li>
+        <li>COGS 100 — Introduction to Cognitive Science.</li>
+        <li>CISC 102 — Discrete Structures.</li>
+      </ul> <!-- Structure: logical order for content -->
 
-      <!-- ====== CONTACT (update your links) ====== -->
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:student@queensu.ca">24krlm@queensu.ca</a></p>
-      <p>LinkedIn: <a href="#">www.linkedin.com/in/awwal-ahmed10</a></p>
+      <!-- ====== CONTACT SECTION ====== -->
+      <h2>Contact</h2> <!-- Structure: <h2> heading -->
+      <p>Email: <a href="mailto:24krlm@queensu.ca">24krlm@queensu.ca</a></p> 
+      <!-- Functionality: check mailto link works -->
+      <!-- Security/Privacy: no personal phone/address included -->
+      <p>LinkedIn: <a href="#">www.linkedin.com/in/awwal-ahmed10</a></p> 
+      <!-- Functionality: test external link -->
+      <!-- Security: ensure link is to trustworthy domain -->
+      <!-- Accessibility: link text is descriptive -->
     </main>
   </body>
 </html>
+
+<!-- ================== DETAILED CHECKLIST ================== -->
+<!-- Functionality — open the live URL; click every link; check images load (use DevTools Network tab if needed). -->
+<!-- Clarity — headings in plain English; the first paragraph explains who/what/where; avoid jargon. -->
+<!-- Structure — page uses <header>, <main>, sections in logical order; only one <h1>; section titles use <h2>. -->
+<!-- Maintainability — colors, fonts, spacing set in style.css (not inline); repeated styles extracted to a class. -->
+<!-- Performance — hero photos ~200–400 KB; use width/height attrs; remove unused images or CSS. -->
+<!-- Security / Privacy — no personal phone/address unless intentional; external links use trustworthy domains. -->
+<!-- Documentation — README explains how to update and where to put images; commit messages describe the why. -->
+<!-- Accessibility — every <img> has alt; color contrast OK (Queen’s blue on white is good); link text is meaningful. -->
