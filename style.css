@@ -1,12 +1,69 @@
 :root {
-  --red:#aa1e22; --gold:#f2a900; --blue:#002d72;
+  --red: #aa1e22;
+  --gold: #f2a900;
+  --blue: #002d72;
+  --text-dark: #1a1a1a;
+  --card-bg: #ffffff;
 }
-body { font-family: system-ui, sans-serif; margin:0; background:var(--red); color:#fff; }
-header { background:var(--blue); color:#fff; padding:1rem; }
-main { background:#fff; color:#1a1a1a; max-width:900px; margin:2rem auto; border-radius:12px; padding:1.5rem; }
-a { color: var(--blue); }
-/* === personalize below by changing colors or spacing === */
-/* example: make headings blue and a bit larger */
-h2 { color: var(--blue); font-size: 1.6rem; }
-/* example: make your photo round */
-img { border-radius: 12px; }
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  background: var(--red);
+  color: #fff;
+}
+
+/* Header */
+header {
+  background: var(--blue);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Main container */
+main {
+  background: var(--card-bg);
+  color: var(--text-dark);
+  max-width: 900px;
+  margin: 2rem auto;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+/* Headings */
+h2 {
+  color: var(--blue);
+  font-size: 1.6rem;
+  margin-top: 1.8rem;
+}
+
+/* Links */
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Image styling */
+img {
+  border-radius: 12px;
+  display: block;
+  margin: 1rem 0;
+}
+
+/* Lists */
+ul {
+  padding-left: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Improve spacing for readability */
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
