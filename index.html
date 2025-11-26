@@ -1,60 +1,69 @@
 <!doctype html>
-<html lang="en"> <!-- Accessibility: declare language for screen readers -->
+<html lang="en"> <!-- Accessibility: declare language -->
   <head>
-    <meta charset="utf-8"/> <!-- Functionality: ensure UTF-8 encoding -->
-    <meta name="viewport" content="width=device-width, initial-scale=1"/> <!-- Functionality: responsive design -->
-    <title>My Queen’s Student Page</title> <!-- Clarity: title matches page purpose -->
-    <link rel="stylesheet" href="style.css"/> <!-- Maintainability: styles in external CSS -->
+    <meta charset="utf-8"/> <!-- UTF-8 encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/> <!-- Responsive layout -->
+    <title>My Queen’s Student Page</title>
+    <link rel="stylesheet" href="style.css"/> <!-- Maintainability: external CSS -->
   </head>
+
   <body>
-    <header> <!-- Structure: semantic header -->
-      <h1>Awwal Ahmed</h1> <!-- Structure: only one <h1>, page owner’s name -->
+    <header>
+      <h1>Awwal Ahmed</h1> <!-- Only one h1 -->
     </header>
-    <!-- TODO: I like the way you arranged everything -->
-    <main> <!-- Structure: main content container -->
+
+    <main>
       <!-- ====== ABOUT SECTION ====== -->
-      <h2>About Me</h2> <!-- Structure: section title with <h2> -->
+      <h2>About Me</h2>
       <p>
-        I am a student at Queen’s School of Computing. I’m interested in exploring how computer science 
-        can be applied to areas like cybersecurity, artificial intelligence, and software development, 
-        while also building practical skills through projects and research.
-      </p> <!-- Clarity: plain English, explains who/what/where -->
+        I’m a Computing student at Queen’s University who’s interested in how technology can solve real problems. 
+        My experience in research at UHN showed me the impact of AI in healthcare, and it pushed me to explore how 
+        computing connects with areas like finance, cybersecurity, and software engineering. I enjoy building things, 
+        learning new tools, and working with others to turn ideas into projects.
+      </p>
 
       <!-- ====== PHOTO ====== -->
-      <img src="me.JPG" alt="Awwal Ahmed portrait" width="239" height="320" /> 
-      <!-- Functionality: check image loads in DevTools Network tab -->
-      <!-- Accessibility: alt text provided -->
-      <!-- Performance: specify width/height; keep file ~200–400 KB -->
+      <img src="me.JPG" alt="Awwal Ahmed portrait" width="239" height="320" />
+      <!-- Image loads correctly, alt text present, width/height set -->
 
-      <!-- ====== COURSES SECTION ====== -->
-      <h2>Courses</h2> <!-- Structure: <h2> for section -->
+      <!-- ====== COURSES ====== -->
+      <h2>Courses</h2>
       <ul>
-        <li>CISC 121 — Introduction to Programming.</li> <!-- Clarity: descriptive course names -->
-        <li>MATH 112 — Introduction Linear Algebra </li>
+        <li>CISC 121 — Introduction to Programming.</li>
+        <li>MATH 112 — Introduction to Linear Algebra.</li>
         <li>MATH 121/124 — Differential and Integral Calculus.</li>
         <li>COGS 100 — Introduction to Cognitive Science.</li>
         <li>CISC 102 — Discrete Structures.</li>
-      </ul> <!-- Structure: logical order for content -->
+      </ul>
 
-      <!-- ====== CONTACT SECTION ====== -->
-      <h2>Contact</h2> <!-- Structure: <h2> heading -->
-      <p>Email: <a href="mailto:24krlm@queensu.ca">24krlm@queensu.ca</a></p> 
-      <!-- Functionality: check mailto link works -->
-      <!-- Security/Privacy: no personal phone/address included -->
-      <p>LinkedIn: <a href="#">www.linkedin.com/in/awwal-ahmed10</a></p> 
-      <!-- Functionality: test external link -->
-      <!-- Security: ensure link is to trustworthy domain -->
-      <!-- Accessibility: link text is descriptive -->
+      <!-- ====== PROJECTS ====== -->
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Resume Keyword Matcher</strong>  
+          A Python app that compares resumes with job descriptions and highlights the missing keywords to help improve job applications.
+        </li>
+
+        <li>
+          <strong>Binary Search Visualizer</strong>  
+          A project I’m building that shows each step of the binary search process. It helps users understand how the algorithm moves and makes decisions.
+        </li>
+      </ul>
+
+      <!-- ====== CONTACT ====== -->
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:24krlm@queensu.ca">24krlm@queensu.ca</a></p>
+      <p>LinkedIn: <a href="#">www.linkedin.com/in/awwal-ahmed10</a></p>
     </main>
   </body>
 </html>
 
 <!-- ================== DETAILED CHECKLIST ================== -->
-<!-- Functionality — open the live URL; click every link; check images load (use DevTools Network tab if needed). -->
-<!-- Clarity — headings in plain English; the first paragraph explains who/what/where; avoid jargon. -->
-<!-- Structure — page uses <header>, <main>, sections in logical order; only one <h1>; section titles use <h2>. -->
-<!-- Maintainability — colors, fonts, spacing set in style.css (not inline); repeated styles extracted to a class. -->
-<!-- Performance — hero photos ~200–400 KB; use width/height attrs; remove unused images or CSS. -->
-<!-- Security / Privacy — no personal phone/address unless intentional; external links use trustworthy domains. -->
-<!-- Documentation — README explains how to update and where to put images; commit messages describe the why. -->
-<!-- Accessibility — every <img> has alt; color contrast OK (Queen’s blue on white is good); link text is meaningful. -->
+<!-- Functionality: test links and images, check Network tab -->
+<!-- Clarity: headings clear, intro explains who and what -->
+<!-- Structure: <header> and <main> used correctly, only one <h1> -->
+<!-- Maintainability: styles live in style.css -->
+<!-- Performance: images sized, keep them under ~400 KB -->
+<!-- Security: only safe external links, no personal addresses -->
+<!-- Documentation: README explains image placement and updates -->
+<!-- Accessibility: alt text provided, good color contrast -->
